@@ -25,6 +25,32 @@ img{
   width: 97%;
   float: center
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .llpane {
     width: 22%;
     height: 100%;
@@ -63,7 +89,12 @@ img{
   <img src="./posts/An unofficial East Coast Cruise/images/IMG_1805.jpg">
 </a>
 <a href="./posts/Tidal Waters/Tidal Waters 201007.html">
+  <h2>Fade in Overlay</h2>
+  <p>Hover over the image to see the effect.</p>
+  <div class="container">
   <img src="./posts/Tidal Waters/images/IMG_1699.jpg">
+  <div class="overlay">
+    <div class="text">Tidal waters</div>
   </a>
   <p>
 </div>
