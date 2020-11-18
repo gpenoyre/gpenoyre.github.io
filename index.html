@@ -25,6 +25,45 @@ img{
   width: 97%;
   float: center
 }
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.imagetext {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 .llpane {
     width: 22%;
     height: 100%;
@@ -60,6 +99,12 @@ img{
 <div class="llpane">
   <h2> </h2>
   <p> </p>
+  <div class="container">
+    <img src="./posts/Tidal Waters/images/IMG_1699.jpg" alt="Avatar" class="image" style="width:100%">
+    <div class="middle">
+      <div class="imagetext">John Doe</div>
+    </div>
+  </div>
 <a href="./posts/An unofficial East Coast Cruise/An unofficial East Coast Cruise 200923.html">
   <img src="./posts/An unofficial East Coast Cruise/images/IMG_1805.jpg">
 </a>
