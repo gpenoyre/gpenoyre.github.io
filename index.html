@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home Page</title>
+<title>Home Page</title>
 
 
 <style>
 body {
   background-color: rgb(4, 4, 12);
   color: white;
-  font-family: "Futura",sans-serif;
+  font-family: "Futura", "Trebuchet MS", verdana, sans-serif;
+  font-weight:normal;
   font-style: normal;
   font-size: 1em;
   }
@@ -16,7 +17,7 @@ div h1{
   font-size: 1.75em;
 }
 div h2{
-  font-size: 1.25em;
+  font-size: 1.0em;
 }
 div p{
   font-size: 0.75em;
@@ -29,16 +30,14 @@ img{
   position: relative;
   width: 97%;
 }
-
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
+  width: 97%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -49,41 +48,42 @@ img{
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .container:hover .image {
   opacity: 0.3;
 }
-
 .container:hover .middle {
   opacity: 1;
 }
-
 .imagetext {
-
   color: white;
-  font-size: 0.75em;
-
+  font-size: 0.8em;
 }
 .llpane {
-    width: 22%;
+    width: 20%;
     height: 100%;
     float: left;
     background-color: rgb(4, 4, 12);
 }
 .lmpane {
-    width: 22%;
+    width: 20%;
     height: 100%;
     float: left;
     background-color: rgb(4, 4, 12);
 }
 .rmpane {
-    width: 22%;
+    width: 20%;
     height: 100%;
     float: left;
     background-color: rgb(4, 4, 12);
 }
 .rrpane {
-  width: 22%;
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: rgb(4, 4, 12);
+}
+.rpane {
+  width: 20%;
   height: 100%;
   float: left;
   background-color: rgb(4, 4, 12);
@@ -93,23 +93,29 @@ img{
 <body>
 
 <header>
-    <h1> GREG PENOYRE </h1>
+<h1>   GREG PENOYRE </h1>
 </header>
 
 <div class="llpane">
   <h2> </h2>
   <p> </p>
-
 <a href="./posts/An unofficial East Coast Cruise/An unofficial East Coast Cruise 200923.html">
-  <img src="./posts/An unofficial East Coast Cruise/images/IMG_1805.jpg">
+  <div class="container">
+      <img src="./posts/An unofficial East Coast Cruise/images/IMG_1805.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="imagetext">An Unofficial East Coast Cruise </div>
+      </div>
+    </div>
 </a>
+<p> </p>
 <a href="./posts/Tidal Waters/Tidal Waters 201007.html">
   <div class="container">
       <img src="./posts/Tidal Waters/images/IMG_1699.jpg" alt="Avatar" class="image" style="width:100%">
       <div class="middle">
-        <div class="imagetext">Tidal waters </div>
+        <div class="imagetext">Tidal Waters </div>
       </div>
-    </div></a>
+    </div>
+  </a>
   <p>
 </div>
 
@@ -117,10 +123,21 @@ img{
   <h2> </h2>
   <p> </p>
 <a href="./posts/Fallen Oak/Fallen Oak 200923.html">
-  <img  src="./posts/Fallen Oak/images/IMG_1742.jpg">
+  <div class="container">
+  <img  src="./posts/Fallen Oak/images/IMG_1742.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="imagetext">Fallen Oak </div>
+  </div>
+</div>
 </a>
+<p> </p>
 <a href="./posts/Drawing for Making/Drawing for making 201007.html">
-  <img  src="./posts/Drawing for Making/images/IMG_0750.jpg">
+  <div class="container">
+  <img  src="./posts/Drawing for Making/images/IMG_0750.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="imagetext">Drawing for Making </div>
+  </div>
+</div>
   </a>
   <p>
 </div>
@@ -129,10 +146,21 @@ img{
   <h2> <h2>
   <p> </p>
 <a href="./posts/Nordic Walking/Nordic Walking 200824.html">
-  <img src="./posts/Nordic Walking/images/IMG_1152.jpg">
+  <div class="container">
+  <img src="./posts/Nordic Walking/images/IMG_1152.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="imagetext">Nordic Walking </div>
+  </div>
+</div>
 </a>
+<p> </p>
 <a href="./posts/A Post Lockdown Cruise/A Post Lockdown Cruise 200923.html">
-  <img src="./posts/A Post Lockdown Cruise/images/IMG_1661.jpg">
+  <div class="container">
+    <img src="./posts/A Post Lockdown Cruise/images/IMG_1661.jpg" alt="Avatar" class="image" style="width:100%">
+    <div class="middle">
+      <div class="imagetext">A Post Lockdown Cruise </div>
+    </div>
+  </div>
   </a>
   <p>
 </div>
@@ -140,18 +168,27 @@ img{
 <div class="rrpane">
   <h2> <h2>
   <p> </p>
-<a href="./posts/Revisiting Oils/Revisiting Oils 200923.html"><img src="./posts/Revisiting Oils/images/IMG_1739.jpg">
+<a href="./posts/Revisiting Oils/Revisiting Oils 200923.html">
+  <div class="container">
+    <img src="./posts/Revisiting Oils/images/IMG_1739.jpg" alt="Avatar" class="image" style="width:100%">
+    <div class="middle">
+      <div class="imagetext">Revisiting Oils </div>
+    </div>
+  </div>
  </a>
 <p>
 </div>
 
 <div class="rpane">
-<p><p><p><br>
+
 <h2> Links</h2>
-<p> Other sites and interests: </p>
+
+<p>
 <a href="https://katemiller.me/about/">Kate Miller Poetry</a>
 <p>
 <a href="https://www.instagram.com/zpenoyre/?hl=en/">Zephyr Penoyre Instagram</a>
+<p>
+<a href="https://https://katepenoyre.co.uk//">Kate Penoyre Paintings & Prints</a>
 <p>
 <div>
 </body>
