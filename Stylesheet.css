@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "FuturaLT";
+    src: url("../../Fonts/FuturaLT.woff2") format('woff2');
+}
+body {
+  background-color: rgb(14, 26, 28);
+  color: white;
+  font-family: "FuturaLT", "Trebuchet MS", verdana, sans-serif;
+  font-style: normal;
+  font-size: 1.1em;
+  position: relative;left:30px
+  }
+div h1{
+  font-size: 2.5em;
+  color: white;
+}
+div h2{
+  font-size: 1.5em;
+}
+div h3{
+  font-size: 0.5em;
+}
+div p{
+  font-size: 0.75em;
+}
+div p2{
+    font-size: 1em;
+    text-align: center;
+}
+a{
+  color: darkgrey;
+  font-style: normal;
+  font-size: 0.8em;
+}
+img{
+  width: 100%;
+  float: centre;
+  position: relative;left:100px
+}
+.lpane {
+    width: 70%;
+    height: 100%;
+    float: left;
+    margin-right:30px
+    background-color: rgb(14, 26, 28);
+    }
+
+.rpane {
+    color: darkgrey;
+    width: 20%;
+    height: 100%;
+    float: right;
+    background-color: rrgb(14, 26, 28);
+    position: relative;left:40px
+    }
